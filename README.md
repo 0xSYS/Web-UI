@@ -25,7 +25,7 @@ A collection of custom html elements I found on the internet to use them in my w
 - Implement theme manager
 - Changing class names for some elements
 - Making easier to use some of the ui elements
-- ✅ Publishing the html page[Link Here]("https://pianoarts2007.github.io/Web-UI/")
+- ✅ Publishing the html page [Link Here]("https://pianoarts2007.github.io/Web-UI/")
 - Adding the merged css components and js utils too
 - Minimizing css code and js code (only for the full component merge)
 - Adding Video/Audio Elements
