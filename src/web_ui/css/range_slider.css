@@ -1,0 +1,76 @@
+/*
+Component: Range Slider
+Date created: 13.07.2023
+Original source: https://codepen.io/badraan/pen/NMRpQR
+Original author: Ahmed Badran
+Date created (original): unknown
+Modified: yes
+*/
+
+
+
+
+.range-form {
+    width: 400px;
+    margin: auto;
+    padding: 50px;
+  }
+  
+  .range-slider {
+    -webkit-appearance: none;
+    /* Override default CSS styles */
+    appearance: none;
+    width: 100%;
+    /* Full-width */
+    height: 16px;
+    border-radius: 10px;
+    /* Specified height */
+    background: #0084ff;
+    /* Grey background */
+    outline: none;
+    /* Remove outline */
+    opacity: 0.7;
+    /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: 0.2s;
+    /* 0.2 seconds transition on hover */
+    transition: opacity 0.2s;
+  }
+  .range-slider:hover {
+    opacity: 100;
+    /* Fully shown on mouse-over */
+  }
+  .range-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* Override default look */
+    appearance: none;
+    width: 28px;
+    /* Set a specific slider handle width */
+    height: 28px;
+    /* Slider handle height */
+    background: #4298e9;
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+    border-radius: 20%;
+    border: 1px solid #464646;
+  }
+  .range-slider::-webkit-slider-thumb:hover{
+    background: #3bb4e4;
+    opacity: 2.7;
+    -webkit-transition: 0.2s;
+    /* 0.2 seconds transition on hover */
+    transition: opacity 1.2s;
+  }
+  .range-slider::-webkit-slider-thumb:active{
+    background: #7ad9ff;
+  }
+  .range-slider::-moz-range-thumb {
+    width: 18px;
+    /* Set a specific slider handle width */
+    height: 18px;
+    /* Slider handle height */
+    background: #4CAF50;
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+  }

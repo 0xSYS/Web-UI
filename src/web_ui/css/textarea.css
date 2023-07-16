@@ -1,0 +1,45 @@
+/*
+Component: textarea
+Date created: 13.07.2023
+Original source: https://codepen.io/dcode-software/pen/xxrVLWr
+Original author: Dom
+Date created (original): sept 1, 2021
+Modified: yes
+*/
+
+
+
+
+.web_ui_textarea
+{
+    background-color: #dddddd;
+    color: #666666;
+    padding: 1em;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    outline: none;
+    font-family: "Heebo", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4;
+    width: 200px;
+    height: 100px;
+    transition: all 0.2s;
+    min-height: 150px;
+    min-width: 150px;
+}
+  
+.web_ui_textarea:hover 
+{
+    cursor: pointer;
+    background-color: #eeeeee;
+}
+  
+.web_ui_textarea:focus 
+{
+    cursor: text;
+    color: #333333;
+    background-color: white;
+    border-color: #008cff;
+    box-shadow: 8px 8px 8px #00a2ff;
+}

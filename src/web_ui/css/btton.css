@@ -1,0 +1,121 @@
+/*
+    Component: UI button
+    Date created: 11.07.2023
+    Original source: https://www.cssscript.com/android-l-ripple-click-effect-with-javascript-and-css3/
+    Original author: idiotWu.
+    Date created (original): August 7, 2014
+    Modified: yes
+*/
+
+
+
+
+.web_ui_button
+{
+    position: relative;
+    display: block;
+    padding: 8px 12px;
+    border: none;
+    background: #1aa4ff;
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.web_ui_button:disabled
+{
+    position: relative;
+    display: block;
+    padding: 8px 12px;
+    border: none;
+    background: #81cdff;
+    cursor: not-allowed;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+.web_ui_button:hover
+{
+    position: relative;
+    display: block;
+    padding: 8px 12px;
+    border: none;
+    background: #55b1ee;
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-radius: 8px;
+    color: #575757;
+    box-shadow: 4px 4px 4px 1px #0084ff;
+    transition: .3s;
+}
+
+.web_ui_button:active
+{
+    position: relative;
+    display: block;
+    padding: 8px 12px;
+    border: none;
+    background: #55b1ee;
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-radius: 8px;
+    color: #575757;
+    box-shadow: 6px 6px 6px 2px #0084ff;
+    transition: .3s;
+}
+
+
+.ripple 
+{
+    position: absolute;
+    background: rgba(255, 255, 255, 0.452);
+    border-radius: 100%;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    pointer-events: none;
+}
+
+.ripple.show 
+{
+    -webkit-animation: ripple 500ms ease-out;
+    animation: ripple 500ms ease-out;
+}
+
+@-webkit-keyframes ripple 
+{ 
+    to 
+    {
+        -webkit-transform: scale(10);
+        transform: scale(10);
+        opacity: 0;
+    }  
+}
+  
+@keyframes ripple 
+{ 
+    to 
+    {
+        -webkit-transform: scale(10);
+        transform: scale(10);
+        opacity: 0;
+    }
+}
