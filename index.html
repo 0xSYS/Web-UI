@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web UI templates</title>
+        <link href="style.css" rel="stylesheet">
+        <!--UI components-->
+        <link href="src/web_ui/css/btton.css" rel="stylesheet">
+        <link href="src/web_ui/css/checkbox.css" rel="stylesheet">
+        <link href="src/web_ui/css/checkbox_switch_type.css" rel="stylesheet">
+        <link href="src/web_ui/css/tabs.css" rel="stylesheet">
+        <link href="src/web_ui/css/radio_button.css" rel="stylesheet">
+        <link href="src/web_ui/css/dropdown_list.css" rel="stylesheet">
+        <link href="src/web_ui/css/textarea.css" rel="stylesheet">
+        <link href="src/web_ui/css/text_input.css" rel="stylesheet">
+        <link href="src/web_ui/css/range_slider.css" rel="stylesheet">
+        <link href="src/web_ui/css/dialog.css" rel="stylesheet">
+        <link href="src/web_ui/css/color_picker.css" rel="stylesheet">
+        <link href="src/web_ui/css/progress_bar.css" rel="stylesheet">
+        <link href="src/web_ui/css/scrollbar.css" rel="stylesheet">
+        <!--<link href="src/web_ui/css/test.css" rel="stylesheet">-->
+        <link href="prism.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lemon&family=Mukta:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <script src="src/web_ui/js/buttonRipple.js"></script>
+        <script src="src/web_ui/js/dropdown_list_selector.js"></script>
+        <script src="src/web_ui/js/range_slider.js"></script>
+        <script src="src/web_ui/js/dialog_util.js"></script>
+        <script src="src/web_ui/js/color_picker.js"></script>
+
+        <script src="prism.js"></script>
+        <script>hljs.highlightAll();</script>
+
+        <h1>Here is the full preview for all ui components</h1>
+        <br>
+        <h3>To use the components you can access them locally (if you downloaded the source code) or trough links from the repository. (which I recommend)</h3>
+        <br>
+        <h4>by default the scrollbar is globally rendered on the page. To use it import the css scrollbar.</h4>
+<pre style="height: 100px;">
+<code class="language-html">
+&lt;link href="src/web_ui/css/scrollbar.css" rel="stylesheet">
+</code>
+</pre>
+        
+        <div class="ui-container">
+            <p class="uiText">Button Examples</p>
+            <button class="web_ui_button">Button</button>
+            <br>
+            <button class="web_ui_button" disabled>Disabeld button</button>
+        </div>
+<pre>
+<code class="language-html">
+&lt;!--Usage--&gt;
+
+&lt;!--required components--&gt;
+
+&lt;link href="src/web_ui/css/btton.css" rel="stylesheet"&gt;
+&lt;!--The ripple effect is in the css--&gt;
+
+&lt;!--If you want to show the button ripple depending on the mouse cursor the button ripple js component is requited--&gt;
+&lt;script src="src/web_ui/js/buttonRipple.js"&gt;&lt;/script&gt;
+
+&lt;!--element--&gt;
+&lt;button class="web_ui_button"&gt;Button&lt;/button&gt;
+
+&lt;!--disabled state--&gt;
+&lt;button class="web_ui_button" disabled&gt;Disabeld button&lt;/button&gt;
+</code>
+</pre>
+        <br>
+        <div class="ui-container">
+            <p class="web_ui_text">Checkbox</p>
+            <br>
+            <input type="checkbox" id="cb2" class="web_ui_checkbox"/>
+            <label for="web_ui_checkbox" >Checkbox</label>
+            <br>
+            <input type="checkbox" id="cb3" class="web_ui_checkbox" checked/>
+            <label for="web_ui_checkbox">Checked</label>
+            <br>
+            <input type="checkbox" id="cb4" class="web_ui_checkbox" disabled/>
+            <label for="web_ui_checkbox" >Disabled</label>
+            <br>
+            <input type="checkbox" id="cb5" class="web_ui_checkbox" checked disabled/>
+            <label for="web_ui_checkbox">Disabled checked</label>
+            <br>
+            <br>
+            <p class="uiText">Rounded</p>
+            <br>
+            <input type="checkbox" id="cb7" class="web_ui_checkbox_rounded"/>
+            <label for="web_ui_checkbox_rounded" >Checkbox</label>
+            <br>
+            <input type="checkbox" id="cb8" class="web_ui_checkbox_rounded" checked/>
+            <label for="web_ui_checkbox_rounded">Checked</label>
+            <br>
+            <input type="checkbox" id="cb9" class="web_ui_checkbox_rounded" disabled>
+            <label for="web_ui_checkbox_rounded">Disabled</label>
+            <br>
+            <input type="checkbox" id="cb9" class="web_ui_checkbox_rounded" disabled checked>
+            <label for="web_ui_checkbox_rounded">Disabled and checked</label>
+            <br>
+            <br>
+            <p class="uiText">Toggle switch type</p>
+            <br>
+            <label class="cl-switch cl-switch-large">
+                <input type="checkbox">
+                <span class="switcher"></span>
+                <span class="label">Switch toggle</span>
+            </label>
+            <br>
+            <br>
+            <label class="cl-switch cl-switch-large">
+                <input type="checkbox" checked>
+                <span class="switcher"></span>
+                <span class="label">Switch toggle checked</span>
+            </label>
+            <br>
+            <br>
+            <label class="cl-switch cl-switch-large">
+                <input type="checkbox" checked disabled>
+                <span class="switcher"></span>
+                <span class="label">Switch toggle checked disabled</span>
+            </label>
+            <br>
+            <br>
+            <label class="cl-switch cl-switch-large">
+                <input type="checkbox" disabled>
+                <span class="switcher"></span>
+                <span class="label">Switch toggle disabled</span>
+            </label>
+        </div>
+<pre>
+<code class="language-html">
+&lt;!--Required component--&gt;
+&lt;link href="src/web_ui/css/checkbox.css" rel="stylesheet"&gt;
+
+&lt;!--Normal style--&gt;
+&lt;input type="checkbox" id="cb2" class="web_ui_checkbox"/>
+&lt;label for="web_ui_checkbox"&gt;Checkbox&lt;/label&gt;
+&lt;br&gt;
+&lt;input type="checkbox" id="cb3" class="web_ui_checkbox" checked/&gt;
+&lt;label for="web_ui_checkbox"&gt;Checked&lt;/label&gt;
+&lt;br&gt;
+&lt;input type="checkbox" id="cb4" class="web_ui_checkbox" disabled/&gt;
+&lt;label for="web_ui_checkbox" &gt;Disabled&lt;/label&gt;
+&lt;br&gt;
+&lt;input type="checkbox" id="cb5" class="web_ui_checkbox" checked disabled/&gt;
+&lt;label for="web_ui_checkbox"&gt;Disabled checked&lt;/label&gt;
+
+&lt;!--Rounded style--&gt;
+&lt;input type="checkbox" id="cb7" class="web_ui_checkbox_rounded"/&gt;
+&lt;label for="web_ui_checkbox_rounded"&gt;Checkbox&lt;/label&gt;
+&lt;br>
+&lt;input type="checkbox" id="cb8" class="web_ui_checkbox_rounded" checked/&gt;
+&lt;label for="web_ui_checkbox_rounded"&gt;Checked&lt;/label&gt;
+&lt;br>
+&lt;input type="checkbox" id="cb9" class="web_ui_checkbox_rounded" disabled&gt;
+&lt;label for="web_ui_checkbox_rounded"&gt;Disabled&lt;/label&gt;
+&lt;br>
+&lt;input type="checkbox" id="cb9" class="web_ui_checkbox_rounded" disabled checked&gt;
+&lt;label for="web_ui_checkbox_rounded"&gt;Disabled and checked&lt;/label&gt;
+
+
+
+&lt;!--toggle switch type--&gt;
+
+&lt;!--Required component--&gt;
+&lt;link href="src/web_ui/css/checkbox_switch_type.css" rel="stylesheet"&gt;
+
+&lt;!--Example--&gt;
+&lt;label class="cl-switch cl-switch-large">
+    &lt;input type="checkbox">
+    &lt;span class="switcher">&lt;/span>
+    &lt;span class="label">Switch toggle&lt;/span>
+&lt;/label>
+&lt;br>
+&lt;br>
+&lt;label class="cl-switch cl-switch-large">
+    &lt;input type="checkbox" checked>
+    &lt;span class="switcher">&lt;/span>
+    &lt;span class="label">Switch toggle checked&lt;/span>
+&lt;/label>
+&lt;br>
+&lt;br>
+&lt;label class="cl-switch cl-switch-large">
+    &lt;input type="checkbox" checked disabled>
+    &lt;span class="switcher">&lt;/span>
+    &lt;span class="label">Switch toggle checked disabled&lt;/span>
+&lt;/label>
+&lt;br>
+&lt;br>
+&lt;label class="cl-switch cl-switch-large">
+    &lt;input type="checkbox" disabled>
+    &lt;span class="switcher">&lt;/span>
+    &lt;span class="label">Switch toggle disabled&lt;/span>
+&lt;/label>
+</div>
+</code>
+</pre>
+        <br>
+        <div class="ui-container">
+            <p class="uiText">Radio buttons</p>
+            
+            <br>
+            <label><input type="radio" name="opt_1"> First</label>
+            <br>
+            <label><input type="radio" name="opt_1"> Second</label>
+            <br>
+            <label><input type="radio" name="a" disabled> Disabled</label>
+        </div>
+<pre>
+<code class="language-html">
+&lt;!--Required components--&gt;
+&lt;link href="src/web_ui/css/radio_button.css" rel="stylesheet">
+
+&lt;!--Example--&gt;
+&lt;label>&lt;input type="radio" name="opt_1"> First&lt;/label>
+&lt;br>
+&lt;label>&lt;input type="radio" name="opt_1"> Second&lt;/label>
+&lt;br>
+&lt;label>&lt;input type="radio" name="a" disabled> Disabled&lt;/label>
+</code>
+</pre>
+        <br>
+        <div class="ui-container">
+            <p class="uiText">List selector</p>
+            <label id="img_category_label"class="field"for="img_category"data-value="">
+                <span style="font-size: 16px;">Category</span>
+                <div id="img_category"class="psuedo_select"name="img_category">
+                    <span class="selected"></span>
+                    <ul id="img_category_options"class="options">
+                        <li class="option"data-value="opt_1">Option 1</li>
+                        <li class="option"data-value="opt_2">Option 2</li>
+                    </ul>
+                </div>
+            </label>
+                
+        </div>
+<pre>
+<code class="language-html">
+&lt;!--Required components--&gt;
+&lt;link href="src/web_ui/css/dropdown_list.css" rel="stylesheet">
+&lt;script src="src/web_ui/js/dropdown_list_selector.js">&lt;/script>
+
+&lt;!--Example--&gt;
+&lt;label id="img_category_label"class="field"for="img_category"data-value="">
+    &lt;span style="font-size: 16px;">Category&lt;/span>
+    &lt;div id="img_category"class="psuedo_select"name="img_category">
+        &lt;span class="selected">&lt;/span>
+        &lt;ul id="img_category_options"class="options">
+            &lt;li class="option"data-value="opt_1">Option 1&lt;/li>
+            &lt;li class="option"data-value="opt_2">Option 2&lt;/li>
+        &lt;/ul>
+    &lt;/div>
+&lt;/label>
+</code>
+</pre>
+        <br>
+        <br>
+        <div class="wrapper">
+            <div class="tabs">
+              <div class="tab">
+                <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
+                <label for="tab-1" class="tab-label">Tab One</label>
+                <div class="tab-content">My father had a small estate in Nottinghamshire: I was the third of five sons. He sent me to Emanuel College in Cambridge at fourteen years old, where I resided three years, and applied myself close to my studies; but the charge of maintaining me, although I had a very scanty allowance, being too great for a narrow fortune, I was bound apprentice to Mr. James Bates, an eminent surgeon in London, with whom I continued four years. </div>
+              </div>
+              <div class="tab">
+                <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
+                <label for="tab-2" class="tab-label">Tab Two</label>
+                <div class="tab-content">My father now and then sending me small sums of money, I laid them out in learning navigation, and other parts of the mathematics, useful to those who intend to travel, as I always believed it would be, some time or other, my fortune to do. </div>
+              </div>
+              <div class="tab">
+                <input type="radio" name="css-tabs" id="tab-3" class="tab-switch">
+                <label for="tab-3" class="tab-label">Tab Three</label>
+                <div class="tab-content">When I left Mr. Bates, I went down to my father: where, by the assistance of him and my uncle John, and some other relations, I got forty pounds, and a promise of thirty pounds a year to maintain me at Leyden: there I studied physic two years and seven months, knowing it would be useful in long voyages.</div>
+              </div>
+            </div>
+        </div>
+<pre>
+<code class="language-html">
+&lt;!--Required component--&gt;
+&lt;link href="src/web_ui/css/tabs.css" rel="stylesheet">
+
+&lt;!--Example--&gt;
+&lt;div class="wrapper">
+    &lt;div class="tabs">
+        &lt;div class="tab">
+            &lt;input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
+            &lt;label for="tab-1" class="tab-label">Tab One&lt;/label>
+            &lt;div class="tab-content">My father had a small estate in Nottinghamshire: I was the third of five sons. He sent me to Emanuel College in Cambridge at fourteen years old, where I resided three years, and applied myself close to my studies; but the charge of maintaining me, although I had a very scanty allowance, being too great for a narrow fortune, I was bound apprentice to Mr. James Bates, an eminent surgeon in London, with whom I continued four years. &lt;/div>
+        &lt;/div>
+        &lt;div class="tab">
+            &lt;input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
+            &lt;label for="tab-2" class="tab-label">Tab Two&lt;/label>
+            &lt;div class="tab-content">My father now and then sending me small sums of money, I laid them out in learning navigation, and other parts of the mathematics, useful to those who intend to travel, as I always believed it would be, some time or other, my fortune to do. &lt;/div>
+        &lt;/div>
+        &lt;div class="tab">
+            &lt;input type="radio" name="css-tabs" id="tab-3" class="tab-switch">
+            &lt;label for="tab-3" class="tab-label">Tab Three&lt;/label>
+            &lt;div class="tab-content">When I left Mr. Bates, I went down to my father: where, by the assistance of him and my uncle John, and some other relations, I got forty pounds, and a promise of thirty pounds a year to maintain me at Leyden: there I studied physic two years and seven months, knowing it would be useful in long voyages.&lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/div>
+</code>
+</pre>
+        <br>
+        <textarea class="web_ui_textarea" placeholder="type something"></textarea>
+<pre>
+<code class="language-html">
+&lt;!--Component required--&gt;
+&lt;link href="src/web_ui/css/textarea.css" rel="stylesheet">
+
+&lt;!--Example--&gt;
+&lt;textarea class="web_ui_textarea" placeholder="type something">&lt;/textarea>
+</code>
+</pre>
+        <div class="ui-container">
+            <p class="uiText">Text input</p>
+            <br>
+            <input type="text" value="Default" class="input">
+            <input type="text" value="Success" class="input input-success">
+            <input type="text" value="Error" class="input input-error">
+            <input type="text" value="Large" class="input input-large">
+            <input type="text" value="Small" class="input input-small">
+            <input type="text" value="Disabled" disabled class="input">
+        </div>
+<pre>
+<code class="language-html">
+&lt;!--Required component--&gt;
+&lt;link href="src/web_ui/css/text_input.css" rel="stylesheet">
+
+&lt;!--Example--&gt;
+&lt;input type="text" value="Default" class="input">
+&lt;input type="text" value="Success" class="input input-success">
+&lt;input type="text" value="Error" class="input input-error">
+&lt;input type="text" value="Large" class="input input-large">
+&lt;input type="text" value="Small" class="input input-small">
+&lt;input type="text" value="Disabled" disabled class="input">
+</code>
+</pre>
+        <br>
+        <div class="ui-container">
+            <p class="uiText">Range Sliders</p>
+            <br>
+            <form class="range-form">
+                <div class="form-group row">
+                  <div class="col-md-9">
+                    <label for="formControlRange">Example Range input</label>
+                  <input type="range" min="1" max="100" value="50" class="form-control-range range-slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+                  </div>
+                </div>
+            </form>
+        </div>
+<pre>
+<code class="language-html">
+&lt;!--Required component--&gt;
+&lt;link href="src/web_ui/css/range_slider.css" rel="stylesheet">
+
+&lt;!--Example--&gt;
+&lt;form class="range-form">
+    &lt;div class="form-group row">
+       &lt;div class="col-md-9">
+           &lt;label for="formControlRange">Example Range input&lt;/label>
+           &lt;input type="range" min="1" max="100" value="50" class="form-control-range range-slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+        &lt;/div>
+    &lt;/div>
+&lt;/form>
+</code>
+</pre>
+        <br>
+        <div class="ui-container">
+            <p class="uiText">Dialog (moveble - resizeble)</p>
+            <br>
+            <button class="web_ui_button" onclick="showDialogSample();">Open the dialog</button>
+        </div>
+<pre>
+<code class="language-html">
+&lt;!--Required components--&gt;
+&lt;link href="src/web_ui/css/dialog.css" rel="stylesheet">
+&lt;script src="src/web_ui/js/dialog_util.js">&lt;/script>
+&lt;!--Example using a button--&gt;
+&lt;button class="web_ui_button" onclick="showDialogSample();">Open the dialog&lt;/button>
+
+&lt;div id="dlgSample" class="dialog" style="min-width:500px; min-height:500px;">
+    &lt;div class="titlebar">Debug Log&lt;/div>
+        &lt;button name="close" style="-webkit-user-select: none; -ms-user-select: none; user-select: none;" class="dlgButton">X&lt;/button>
+        &lt;div class="content">
+            &lt;p class="uiText">some content...</p>
+        &lt;/div>
+    &lt;div class="buttonpane">
+        &lt;div class="buttonset">
+            &lt;button name="cancel" class="dlgButton">Close</button>
+        &lt;/div>
+    &lt;/div>
+&lt;/div>
+
+&lt;!--Dialog control script example--&gt;
+&lt;script&gt;
+var dialogSample
+    function showDialogSample()
+    {
+        if(!dialogSample) dialogSample = new DialogBox("dlgSample");
+        dialogSample.showDialog();
+    }
+&lt;/script&gt;
+</code>
+</pre>
+        <br>
+        <div class="ui-container">
+            <p class="uiText">Color picker</p>
+            <br>
+            <div id="colorPickerExample"></div>
+        </div>
+<pre>
+<code class="language-html">
+&lt;!--Required components--&gt;
+&lt;link href="src/web_ui/css/color_picker.css" rel="stylesheet">
+&lt;script src="src/web_ui/js/color_picker.js">&lt;/script>
+
+&lt;!--Example--&gt;
+&lt;div id="colorPickerExample">&lt;/div>
+
+&lt;script&gt;
+const alwan = new Alwan('#colorPickerExample', 
+{
+    theme: 'dark',
+    toggle: true,
+    popover: true,
+    preset: true,
+    color: '#0c73d3',
+    singleInput: true,
+    copy: true,
+    opacity: true
+    //check out the other options if needed
+    //Link: https://github.com/SofianChouaib/alwan
+});
+&lt;/script&gt;
+</code>
+</pre>
+        <div id="dlgSample" class="dialog" style="min-width:500px; min-height:500px;">
+            <div class="titlebar"><i class="fa fa-list-ul"></i>&nbsp;&nbsp;Debug Log</div>
+            <button name="close" style="-webkit-user-select: none; -ms-user-select: none; user-select: none;" class="dlgButton">X</button>
+            <div class="content" id="errListContent">
+                <p class="uiText">some content...</p>
+            </div>
+            <div class="buttonpane">
+                <div class="buttonset">
+                    <button name="cancel" class="dlgButton">Close</button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="ui-container">
+            <p class="uiText">Progress bar</p>
+            <div class="progress-bar" style="--width: 10" data-label="Loading..."></div>
+        </div>
+<pre>
+<code class="language-html">
+&lt;!--Required components--&gt;
+&lt;link href="src/web_ui/css/progress_bar.css" rel="stylesheet">
+
+&lt;!--Example--&gt;
+&lt;div class="progress-bar" style="--width: 10" data-label="Loading...">&lt;/div>
+
+&lt;!--Optional js code to control the progress bar--&gt;
+&lt;script&gt;
+const progressBar = document.getElementsByClassName('progress-bar')[0]
+    setInterval(() => 
+    {
+        const computedStyle = getComputedStyle(progressBar)
+        const width = parseFloat(computedStyle.getPropertyValue('--width')) || 0
+        progressBar.style.setProperty('--width', width + .1)
+    }, 5)
+&lt;/script&gt;
+</code>
+</pre>
+        <br>
+        <div class="ui-container" style="width: 800px;">
+            <p class="uiText">Spiner loaders</p>
+            <br>
+            <p class="uiText">Large</p>
+            <img src="src/web_ui/css/assets/web_ui_spiner1.svg">
+            <br>
+            <p class="uiText">Medium</p>
+            <img src="src/web_ui/css/assets/web_ui_spiner2.svg">
+            <br>
+            <p class="uiText">small</p>
+            <img src="src/web_ui/css/assets/web_ui_spiner3.svg">
+            <br>
+            <p class="uiText">Smallest</p>
+            <img src="src/web_ui/css/assets/web_ui_smallSpiner.svg">
+        </div>
+<pre>
+<code class="language-html">
+&lt;!--This loaders are SVG based--&gt;
+
+&lt;!--Usage--&gt;
+&lt;p class="uiText">Large&lt;/p>
+&lt;img src="src/web_ui/css/assets/web_ui_spiner1.svg">
+&lt;br&lt;
+&lt;p class="uiText">Medium&lt;/p>
+&lt;img src="src/web_ui/css/assets/web_ui_spiner2.svg">
+&lt;br>
+&lt;p class="uiText">small&lt;/p>
+&lt;img src="src/web_ui/css/assets/web_ui_spiner3.svg">
+&lt;br>
+&lt;p class="uiText">Smallest&lt;/p>
+&lt;img src="src/web_ui/css/assets/web_ui_smallSpiner.svg">
+</code>
+</pre>
+        <!--Color picker definitions-->
+        <script>
+            const alwan = new Alwan('#colorPickerExample', 
+            {
+                theme: 'dark',
+                toggle: true,
+                popover: true,
+                preset: true,
+                color: '#0c73d3',
+                singleInput: true,
+                copy: true,
+                opacity: true
+            });
+        </script>
+        <!--dummy js code for the progress bar-->
+        <script>
+            const progressBar = document.getElementsByClassName('progress-bar')[0]
+            setInterval(() => 
+            {
+                const computedStyle = getComputedStyle(progressBar)
+                const width = parseFloat(computedStyle.getPropertyValue('--width')) || 0
+                progressBar.style.setProperty('--width', width + .1)
+            }, 5)
+        </script>
+    </body>
+</html>

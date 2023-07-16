@@ -1,0 +1,30 @@
+body
+{
+    background-color: rgb(197, 197, 197);
+}
+
+.ui-container
+{
+    background-color: rgb(167, 167, 167);
+    border-radius: 16px;
+    padding: 16px 16px;
+    width: 500px;
+    margin: auto;
+    font-family: Mukta;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    font-family: Mukta;
+    text-align: center;
+}
