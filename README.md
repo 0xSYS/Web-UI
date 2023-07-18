@@ -14,6 +14,7 @@ A collection of custom html elements I found on the internet to use them in my w
 - Color picker
 - Progress bar
 - Spiner loaders
+- Expandable details
 
 
 
@@ -34,7 +35,7 @@ A collection of custom html elements I found on the internet to use them in my w
 ## Upcoming ui elements
 - Video/Audio contents
 - Table
-- Expandable details
+- ✅ Expandable details
 
 ## Usage
 - Download or copy the links of the required components
@@ -53,4 +54,5 @@ A collection of custom html elements I found on the internet to use them in my w
 - Dialog window: made by ZulNs, FrankBuchholz [Source](https://github.com/ZulNs/Draggable-Resizable-Dialog)
 - Color picker: made by: Sefiane Chouaib [Source](https://github.com/SofianChouaib/alwan)
 - Progress bar: made by WDS [Source](https://github.com/WebDevSimplified/css-tutorials/tree/master/Progress%20Bar)
+- Expandable details: made by Elior Tabeka [Source](https://codepen.io/eliortabeka/pen/JOGVNW?editors=1100)
 - Spiner loaders: made by me using [Loading.io](https://loading.io/)
