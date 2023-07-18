@@ -28,11 +28,13 @@ A collection of custom html elements I found on the internet to use them in my w
 - ✅ Publishing the html page [Link Here](https://pianoarts2007.github.io/Web-UI/)
 - Adding the merged css components and js utils too
 - Minimizing css code and js code (only for the full component merge)
-- Adding Video/Audio Elements
 - ✅ Hostig the scripts with CDN
 - ✅ Adding all the cdn links to the web page
 
-
+##Upcoming ui elements
+- Video/Audio contents
+- Table
+- Expandable details
 
 ## Usage
 - Download or copy the links of the required components
