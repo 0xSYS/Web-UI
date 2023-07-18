@@ -31,6 +31,7 @@ A collection of custom html elements I found on the internet to use them in my w
 - Minimizing css code and js code (only for the full component merge)
 - ✅ Hostig the scripts with CDN
 - ✅ Adding all the cdn links to the web page
+- Adapting the ui scale to mobile
 
 ## Upcoming ui elements
 - Video/Audio contents
