@@ -17,6 +17,7 @@
         <link href="src/web_ui/css/color_picker.css" rel="stylesheet">
         <link href="src/web_ui/css/progress_bar.css" rel="stylesheet">
         <link href="src/web_ui/css/scrollbar.css" rel="stylesheet">
+        <link href="src/web_ui/css/detail_expand.css" rel="stylesheet">
         <link href="prism.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lemon&family=Mukta:wght@300&display=swap" rel="stylesheet">
     </head>
@@ -554,6 +555,42 @@ const progressBar = document.getElementsByClassName('progress-bar')[0]
 &lt;br>
 &lt;p class="uiText">Smallest&lt;/p>
 &lt;img src="src/web_ui/css/assets/web_ui_smallSpiner.svg">
+</code>
+</pre>
+        <br>
+<p class="uiText" style="text-align: center;">Detail expand</p>
+<div style="width: 500px; margin-left: 36%;">
+    <details class="primary square">
+        <summary>Click to <span class="open">open</span><span class="close">close</span></summary>		
+        <p>If your browser supports this element, it should allow you to expand and collapse these details.</p>
+    </details>
+
+    <details class="primary square">
+        <summary>Click to <span class="open">open</span><span class="close">close</span></summary>		
+        <p>If your browser supports this element, it should allow you to expand and collapse these details.</p>
+    </details>
+</div>
+<pre>
+<code class="language-html">
+&lt;!--Required component--&gt;
+
+&lt;link href="src/web_ui/css/detail_expand.css" rel="stylesheet">
+
+&lt;!--CDN Link--&gt;
+&lt;link href="https://cdn.jsdelivr.net/gh/PianoArts2007/Web-UI/src/web_ui/css/detail_expand.css" rel="stylesheet">
+
+&lt;!--Usage--&gt;
+&lt;div style="width: 500px; margin-left: 36%;">
+    &lt;details class="primary square">
+        &lt;summary>Click to &lt;span class="open">open&lt;/span>&lt;span class="close">close&lt;/span>&lt;/summary>		
+        &lt;p>If your browser supports this element, it should allow you to expand and collapse these details.&lt;/p>
+    &lt;/details>
+
+    &lt;details class="primary square">
+        &lt;summary>Click to &lt;span class="open">open&lt;/span>&lt;span class="close">close&lt;/span>&lt;/summary>		
+        &lt;p>If your browser supports this element, it should allow you to expand and collapse these details.&lt;/p>
+    &lt;/details>
+&lt;/div>
 </code>
 </pre>
         <!--Color picker definitions-->
