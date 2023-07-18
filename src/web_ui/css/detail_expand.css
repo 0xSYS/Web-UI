@@ -1,0 +1,139 @@
+/*
+Component: Detail expand
+Date created: 18.07.2023
+Original source: https://codepen.io/eliortabeka/pen/JOGVNW?editors=1100
+Original author: Elior Tabeka
+Date created (original): Unknown
+Modified: yes
+*/
+.container {
+    width: 450px;
+    height: 376px;
+  }
+  
+details 
+{
+    border-color: #878d99;
+    color: rgba(255, 255, 255, 0.9);
+    background: #878d99;
+    border: 1px solid;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 4px;
+    min-height: 48px;
+    max-height: 60px;
+    transform-origin: top center;
+    transform: rotate(0.1deg);
+    transition: all 0.3s;
+}
+details:hover 
+{
+    border-color: #878d99;
+    color: rgba(255, 255, 255, 0.6);
+}
+details:active 
+{
+    color: rgba(255, 255, 255, 0.9);
+    border-color: #6d7380;
+}
+details ::-webkit-details-marker 
+{
+    display: none;
+}
+details + details 
+{
+    margin-top: 10px;
+}
+details p 
+{
+    color: #fefefe;
+    line-height: 1.7;
+    margin: 10px 0 0;
+    padding: 0 20px 15px;
+}
+details.primary 
+{
+    border-color: #409eff;
+    color: rgba(255, 255, 255, 0.9);
+    background: #409eff;
+}
+details.primary:hover 
+{
+    border-color: #409eff;
+    color: rgba(255, 255, 255, 0.6);
+}
+details.primary:active 
+{
+    color: rgba(255, 255, 255, 0.9);
+    border-color: #0d84ff;
+}
+details.square 
+{
+    border-radius: 10px;
+}
+details[open] 
+{
+    transition: all 0.6s;
+    min-height: 100px;
+    max-height: 200px;
+}
+  
+summary 
+{
+    outline: none;
+    font-size: 16px;
+    padding: 13px;
+}
+summary:selection 
+{
+    background: transparent;
+}
+summary .close 
+{
+    display: none;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+[open] summary .close 
+{
+    display: inline;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+summary .open 
+{
+    display: inline;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+[open] summary .open 
+{
+    display: none;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+[open] summary 
+{
+    display: inline;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+summary:after 
+{
+    margin-top: 2px;
+    content: "➕";
+    float: left;
+    margin-right: 11px;
+    text-align: center;
+    font-size: 11px;
+}
+[open] summary:after 
+{
+    padding: 0 0 12px 0;
+    content: "➖";
+}
