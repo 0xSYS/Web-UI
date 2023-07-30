@@ -32,6 +32,7 @@ A collection of custom html elements I found on the internet to use them in my w
 - ✅ Hostig the scripts with CDN
 - ✅ Adding all the cdn links to the web page
 - Adapting the ui scale to mobile
+- Convertimg the svg spinner loaders to CSS
 
 ## Upcoming ui elements
 - Video/Audio contents
