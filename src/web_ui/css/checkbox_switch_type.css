@@ -17,7 +17,7 @@
     border-radius: 100px;
     width: 35px;
     height: 15px;
-    background-color: #ccc;
+    background-color: #004b91;
     position: relative;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -55,10 +55,8 @@
 }
 .cl-switch .label 
 {
-    font-family: "Roboto", sans-serif;
     cursor: pointer;
     vertical-align: middle;
-    margin: 0 5px; 
 }
 .cl-switch input[type="checkbox"]:checked + .switcher 
 {
