@@ -593,6 +593,32 @@ const progressBar = document.getElementsByClassName('progress-bar')[0]
 &lt;/div>
 </code>
 </pre>
+
+        <h2>Item div selection</h2>
+        <section class="boxes red"></section>
+<pre>
+<code class="language-html">
+&lt;!--Required Components--&gt;
+
+&lt;!--Div Boxes--&gt;
+&lt;link href="src/web_ui/css/list_item_box.css" rel="stylesheet">
+
+&lt;!--Selection script--&gt;
+&lt;script src="src/web_ui/js/selection.js" type="module">&lt/script>
+&lt;!--Use it only as module!--&gt;
+
+&lt;!--Element usage--&gt;
+&lt;section class="boxes red">&lt;/section>
+
+&lt;!--The CDN links will be added soon--&gt;
+</code>
+</pre>
+<p class="uiText" style="text-align: center;">change the numper of the rendered boxes by editing line 12 in selection.js</p>
+<pre style="width: 170px; height: 50px;">
+<code class="language-js">
+['.boxes.red', 50]
+</code>
+</pre>
         <!--Color picker definitions-->
         <script>
             const alwan = new Alwan('#colorPickerExample', 
