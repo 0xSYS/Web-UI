@@ -15,6 +15,7 @@ A collection of custom html elements I found on the internet to use them in my w
 - Progress bar
 - Spiner loaders
 - Expandable details
+- Mouse selection box
 
 
 
@@ -58,3 +59,4 @@ A collection of custom html elements I found on the internet to use them in my w
 - Progress bar: made by WDS [Source](https://github.com/WebDevSimplified/css-tutorials/tree/master/Progress%20Bar)
 - Expandable details: made by Elior Tabeka [Source](https://codepen.io/eliortabeka/pen/JOGVNW?editors=1100)
 - Spiner loaders: made by me using [Loading.io](https://loading.io/)
+- Mouse selection box: made by: Simonwep [Source](https://github.com/Simonwep/selection)
