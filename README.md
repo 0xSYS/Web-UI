@@ -39,6 +39,7 @@ A collection of custom html elements I found on the internet to use them in my w
 - Video/Audio contents
 - Table
 - ✅ Expandable details
+- Alert notifications with sounds
 
 ## Usage
 - Download or copy the links of the required components
