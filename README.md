@@ -16,6 +16,7 @@ A collection of custom html elements I found on the internet to use them in my w
 - Spiner loaders
 - Expandable details
 - Mouse selection box
+- Table
 
 
 
@@ -36,7 +37,7 @@ A collection of custom html elements I found on the internet to use them in my w
 
 ## Upcoming ui elements
 - Video/Audio contents
-- Table
+- ✅ Table
 - ✅ Expandable details
 - Alert notifications with sounds
 
@@ -60,3 +61,4 @@ A collection of custom html elements I found on the internet to use them in my w
 - Expandable details: made by Elior Tabeka [Source](https://codepen.io/eliortabeka/pen/JOGVNW?editors=1100)
 - Spiner loaders: made by me using [Loading.io](https://loading.io/)
 - Mouse selection box: made by: Simonwep [Source](https://github.com/Simonwep/selection)
+- Table: made by: Nikhli Krishnan [Source](https://codepen.io/nikhil8krishnan/pen/WvYPvv)
