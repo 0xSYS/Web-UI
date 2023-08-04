@@ -1,0 +1,51 @@
+/*
+Component: Table
+Date created: 04.08.2023
+Original source: https://codepen.io/nikhil8krishnan/pen/WvYPvv
+Original author: Nikhli Krishnan
+Date created (original): unknown
+Modified: yes
+*/
+
+
+
+
+table
+{
+  width:100%;
+  table-layout: fixed;
+}
+.tbl-header
+{
+  background-color: rgb(0, 140, 255);
+  user-select: none;
+}
+.tbl-content
+{
+  height:300px;
+  overflow-x:auto;
+  margin-top: 0px;
+  border: 2px solid rgb(110, 110, 110);
+}
+th
+{
+  padding: 20px 15px;
+  text-align: left;
+  font-size: 20px;
+  color: #fff;
+}
+td
+{
+  padding: 15px;
+  text-align: left;
+  vertical-align:middle;
+  font-size: 20px;
+  color: #fff;
+  background-color: rgb(20, 67, 199);
+  border-bottom: solid 2px rgb(110, 110, 110);
+}
+td:hover
+{
+  background-color: rgb(44, 109, 170);
+  transition: all 0.5s;
+}
