@@ -1,4 +1,17 @@
-.selection-area {
+/*
+Component: Selection area for mouse
+Date created: 02.08.2023
+Original source: https://github.com/Simonwep/selection
+Original author: Simonwep
+Date created (original): ...
+Modified: yes
+*/
+
+
+
+
+.selection-area 
+{
     background: rgba(46, 115, 252, 0.384);
     border: 1px solid rgb(0, 140, 255);
     border-radius: 5px;
