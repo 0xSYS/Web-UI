@@ -40,6 +40,7 @@ A collection of custom html elements I found on the internet to use them in my w
 - ✅ Table
 - ✅ Expandable details
 - Alert notifications with sounds
+- Right Click context menu (requested by NotKatsu)
 
 ## Usage
 - Download or copy the links of the required components
