@@ -21,6 +21,7 @@
         <link href="src/web_ui/css/list_item_box.css" rel="stylesheet">
         <link href="src/web_ui/css/mouse_selection_area.css" rel="stylesheet">
         <link href="src/web_ui/css/table.css" rel="stylesheet">
+        <link href="src/web_ui/css/contextMenu.css" rel="stylesheet">
         <link href="prism.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lemon&family=Mukta:wght@300&display=swap" rel="stylesheet">
     </head>
@@ -35,11 +36,96 @@
         <script src="prism.js"></script>
         <script>hljs.highlightAll();</script>
 
+        <div class="wrapper">
+          <div class="content">
+            <ul class="menu">
+              <li class="item">
+                <span>Item 1</span>
+              </li>
+              <li class="item">
+                <span>Item 2</span>
+              </li>
+              <li class="item">
+                <span>Item 3</span>
+              </li>
+              <li class="item share">
+                <div>
+                  <span>Trigger subitem</span>
+                </div>
+                <ul class="share-menu">
+                  <li class="item">
+                    <span>Subitem 1</span>
+                  </li>
+                  <li class="item">
+                    <span>Subitem 2</span>
+                  </li>
+                  <li class="item">
+                    <span>Subitem 3</span>
+                  </li>
+                  <li class="item">
+                    <span>Subitem 4</span>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
         <h1>Here is the full preview for all ui components</h1>
         <br>
         <h3>To use the components you can access them locally (if you downloaded the source code) or trough links from the repository. (which I recommend)</h3>
         <br>
         <h4>by default the scrollbar is globally rendered on the page. To use it import the css scrollbar.</h4>
+
+        <h2>Right Click Context Menu (click right to trigger it)</h2>
+<pre>
+<code class="language-html">
+&lt;!--Required components--&gt;
+&lt;link href="src/web_ui/css/contextMenu.css" rel="stylesheet">
+&lt;!--Always place the context menu script the last!!!--&gt;
+&lt;script src="src/web_ui/js/contextMenu.js">&lt;/script>
+
+&lt;!--CDN Links--&gt;
+&lt;link href="src/web_ui/css/contextMenu.csshttps://cdn.jsdelivr.net/gh/PianoArts2007/Web-UI/src/web_ui/css/contextMenu.css" rel="stylesheet">
+&lt;!--Yet, the script must be placed the last--&gt;
+&lt;script src="https://cdn.jsdelivr.net/gh/PianoArts2007/Web-UI/src/web_ui/js/contextMenu.js">&lt;/script>
+
+&lt;div class="wrapper">
+  &lt;div class="content">
+    &lt;ul class="menu">
+      &lt;li class="item">
+        &lt;span>Item 1&lt;/span>
+      &lt;/li>
+      &lt;li class="item">
+        &lt;span>Item 2&lt;/span>
+      &lt;/li>
+      &lt;li class="item">
+        &lt;span>Item 3&lt;/span>
+      &lt;/li>
+      &lt;li class="item share">
+      &lt;div>
+        &lt;span>Trigger subitem&lt;/span>
+      &lt;/div>
+      &lt;ul class="share-menu">
+        &lt;li class="item">
+          &lt;span>Subitem 1&lt;/span>
+        &lt;/li>
+        &lt;li class="item">
+          &lt;span>Subitem 2&lt;/span>
+        &lt;/li>
+        &lt;li class="item">
+          &lt;span>Subitem 3&lt;/span>
+        &lt;/li>
+        &lt;li class="item">
+          &lt;span>Subitem 4&lt;/span>
+        &lt;/li>
+      &lt;/ul>
+    &lt;/li>
+  &lt;/ul>
+&lt;/div>
+&lt;/div>
+</code>
+</pre>
 <pre style="height: 100px;">
 <code class="language-html">
 &lt;link href="src/web_ui/css/scrollbar.css" rel="stylesheet">
@@ -979,5 +1065,6 @@ const progressBar = document.getElementsByClassName('progress-bar')[0]
     </tbody>
   </table>
 </div>
+        <script src="src/web_ui/js/contextMenu.js"></script>
     </body>
 </html>
