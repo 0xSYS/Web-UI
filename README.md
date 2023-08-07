@@ -17,6 +17,7 @@ A collection of custom html elements I found on the internet to use them in my w
 - Expandable details
 - Mouse selection box
 - Table
+- Right Click context menu
 
 
 
@@ -40,7 +41,7 @@ A collection of custom html elements I found on the internet to use them in my w
 - ✅ Table
 - ✅ Expandable details
 - Alert notifications with sounds
-- Right Click context menu (requested by NotKatsu)
+- ✅ Right Click context menu (requested by NotKatsu)
 
 ## Usage
 - Download or copy the links of the required components
@@ -63,3 +64,4 @@ A collection of custom html elements I found on the internet to use them in my w
 - Spiner loaders: made by me using [Loading.io](https://loading.io/)
 - Mouse selection box: made by: Simonwep [Source](https://github.com/Simonwep/selection)
 - Table: made by: Nikhli Krishnan [Source](https://codepen.io/nikhil8krishnan/pen/WvYPvv)
+- Context Menu: made by: CodingNepal [Source](https://www.codingnepalweb.com/right-click-context-menu-html-javascript/)
