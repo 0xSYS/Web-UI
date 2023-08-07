@@ -1,0 +1,79 @@
+/*
+Component: Context Menu
+Date created: 05.08.2023
+Original source: https://www.codingnepalweb.com/right-click-context-menu-html-javascript/
+Original author: Coding Nepal
+Date created (original): ...
+Modified: yes
+*/
+.wrapper
+{
+    visibility: hidden;
+    position: absolute;
+    width: 200px;
+    border-radius: 10px;
+    border: solid 1px #fff;
+    background: #fff;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.1);
+    z-index: 1;
+}
+.wrapper .menu
+{
+    padding: 10px 12px;
+}
+
+.content .item
+{
+    list-style: none;
+    font-size: 22px;
+    height: 50px;
+    display: flex;
+    width: 91%;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 2px;
+    padding: 0 5px 0 10px;
+}
+.content .item:hover
+{
+    background: #f2f2f2;
+    transition: 0.5s;
+}
+.content .item span
+{
+    margin-left: 8px;
+    font-size: 19px;
+}
+.content .setting
+{
+    display: flex;
+    margin-top: -5px;
+    padding: 5px 12px;
+    border-top: 1px solid #ccc;
+}
+.content .share
+{
+    position: relative;
+    justify-content: space-between;
+}
+.share .share-menu
+{
+    position: absolute;
+    background: #fff;
+    width: 200px;
+    right: -200px;
+    top: -35px;
+    padding: 13px;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 10px;
+    border: solid 1px #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.08);
+    transition: 0.2s ease;
+}
+.share:hover .share-menu
+{
+    opacity: 1;
+    pointer-events: auto;
+}
