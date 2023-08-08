@@ -114,6 +114,11 @@ label.field .psuedo_select ul
   z-index: 2;
   border-radius: 10px 10px;
 }
+label.field .psuedo_select li:hover
+{
+  background: #68cfff;
+  transition: 0.5s;
+}
 label.field .psuedo_select ul li 
 {
   height: 32px;
