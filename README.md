@@ -37,7 +37,7 @@ A collection of custom html elements I found on the internet to use them in my w
 - Adapting the ui scale to mobile
 
 ## Upcoming ui elements
-- Video/Audio contents
+- Video/Audio contents (not sure if these are needed)
 - ✅ Table
 - ✅ Expandable details
 - Alert notifications with sounds
